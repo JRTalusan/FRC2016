@@ -30,10 +30,8 @@ void LauncherDefaultCommand::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void LauncherDefaultCommand::Execute() {
-	Robot::launcher->setLauncherMotor(0);
 	Robot::launcher->setLoaderMotor(0);
 	Robot::launcher->readArmSensor();
-	Robot::launcher->setDart(0);
 	Robot::launcher->printUltrasonic();
 }
 
